@@ -1,0 +1,19 @@
+var name = "Uncle Bens";
+var company = ["Apple", "Samsung", "Google", "Blackberry"];
+var phone = ["iPhone's", "Galaxy's", "Pixel's", "OS's"];
+var price = [999.99, 799.99, 799.99, 399.99];
+var unitSales = [500, 300, 150, 10];
+var i;
+var sum = 0;
+
+for (i=0; i < company.length; i++) {
+    
+     var sales = price[i] * unitSales[i];
+     console.log(company[i], phone[i], "unit sales total is", sales.toLocaleString('en-us', {style: 'currency', currency: 'USD'}) + "." );
+     
+}
+
+for ( i=0; i < price.length; i++) {
+     sum+= (price[i] * unitSales[i]);}
+     console.log(name, "total sales for the month is", sum.toLocaleString('en-us', {style: 'currency', currency: 'USD'}) + ".");
+     
